@@ -1,0 +1,23 @@
+#btnSimular{
+      background-color: rgb(250, 135, 3);
+  }
+
+  #telaForm {
+    
+    text-align: center;
+    padding: 20px;
+}
+
+#telaGrafico {
+    
+  text-align: center;
+  padding: 20px;
+}
+
+.negrito{
+  font-weight: bolder;
+}
+
+.btn1{
+  padding: 10px;
+}
