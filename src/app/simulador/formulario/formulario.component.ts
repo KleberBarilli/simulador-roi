@@ -137,12 +137,7 @@ export class FormularioComponent implements OnInit {
     this.use.formData.push(this.form.value.qtdMes, this.form.value.qtdLojas, this.form.value.ticketMedio, this.form.value.qtdVendedoresLoja, qtdVendedores)
 
     this.use.resultados.push(vendaMensal, vendaAnual, mediaDiariaVendedor, mediaSemanalVendedor, 1)
-    /*
-      Dados do formulário armazenados no use.formData
-      Resultados atuais da empresa salvos no use.resultados, o 1 significa que o formulário foi aceito
-
-      Criação das projeções de aumento com a useCash
-    */
+  
     let mediaDiaVendedor = 2
     let mediaSemanaVendedor = mediaDiaVendedor * 6
     let vendasMesUnidade = (mediaSemanaVendedor * qtdVendedores) * 4
@@ -291,7 +286,7 @@ export class FormularioComponent implements OnInit {
           color: colors[0],
         },
         {
-          x: "Venda Mensal com a UseCash",
+          x: "Venda Mensal com a nossa ferramenta",
           y: Number(this.use.projecao[0]),
           color: colors[1],
         },
@@ -315,7 +310,7 @@ export class FormularioComponent implements OnInit {
           color: colors[0],
         },
         {
-          x: "Venda Anual com a UseCash",
+          x: "Venda Anual com a nossa ferramenta",
           y: Number(this.use.projecao[0]) * 12,
           color: colors[1],
         },
